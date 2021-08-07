@@ -1,0 +1,6 @@
+<app-header></app-header>
+<div class="jumbotron  align-items-center text-center" *ngIf="userDetail" style="background-color: #fff; height: calc(95vh);">
+    <h5>Hello  {{userDetail?.first_name}} {{ userDetail?.last_name }}</h5>
+         <div> <img [src]="userDetail?.avatar"/></div>
+          {{ userDetail?.email }}
+  </div>
